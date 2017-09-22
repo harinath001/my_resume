@@ -5,7 +5,7 @@
 </head>
 <style>
 	ul{
-		margin: 3px;
+		margin: 4px;
 
 	}
 	.left{
@@ -21,6 +21,11 @@
 		vertical-align: top;
 		font-size: 14px
 	}
+	.empty{
+		width: 100%;
+		height: 16px;
+		background-color: transparent;
+	}
 </style>
 <body style="display: inline-block;width: 100%;text-align: center;">
 <div style="display: inline-block;width: 90%;background-color: #7a7a7b;height: 20px;"></div>
@@ -34,6 +39,7 @@
 		5/1 24th D cross, Ejipura, Bangalore, Karnataka, India - 560047 <strong style="color: #d74846">|</strong> +91 9970610243 <strong style="color: #d74846">|</strong> kanchuharinath@gmail.com
 	</div>
 </div>
+<div class="empty"></div>
 <div style="display: inline-block;width: 90%;text-align: center;background-color: transparent;overflow: auto;font-size: 4px;margin-top: 10px">
 	<div style="display: inline-block;width: 100%;background-color: transparent;font-size: 20px;font-family: arial;color: #7a7a7b;margin: 0px;text-align: left;">Education</div>
 	<div style="display: inline-block;width: 100%;background-color: #d74846; height: 3px;margin-top: -5px"></div>
@@ -71,7 +77,7 @@
 
 
 	<div class="left"></div><!--
-	--><div class="right"><ul><ul><ul>This code schedules the task of getting the data from various websites according to the business requirements and logic using APIs of the required websites.This module sends requests to the web service which will fetch the data and clean the data using cleaner module and store the data in database.</ul></ul></ul></div>
+	--><div class="right"><ul><ul><ul>This module schedules the task of getting the data from various websites according to the business requirements.APIs of websites are used.This module sends requests to the web service which will fetch and clean the data using cleaner module and store the data in database.</ul></ul></ul></div>
 
 	<!-- comment the space between this two divs if they are needed-->
 	<!-- <div class="left"></div>
@@ -82,7 +88,7 @@
 
 
 	<div class="left"></div><!--
-	--><div class="right"><ul><ul><ul>Even though most of the data is from afflliate program based on api requests, the prices of the products in websites changes dynamically based on offers, which are not reflected in the corresponding api data. So, using the urls of the product we fetch the webpage of the product using request module in python and evaluate the javascript if necessary using splash which is a headless browser and extract the data in the web page using lxml module in python and the extracted data is updated in the database frequently.</ul></ul></ul></div>
+	--><div class="right"><ul><ul><ul>Prices of products in API are stale. For continuosly update the real time prices we fetch the web pages and extract the data. This module is implemented as webservice which will accept url in the request and fetch the webpage. The data in webpage is extracted using lxml in python and cleaned using regular expressions and populated in database.</ul></ul></ul></div>
 
 	<!-- comment the space between this two divs if they are needed-->
 	<!-- <div class="left"></div>
@@ -93,7 +99,7 @@
 
 
 	<div class="left"></div><!--
-	--><div class="right"><ul><ul><ul>This web service accepts the url in the request and fetch the similar products from database using various algorithms that suit the type of data we are matching. This is the core part of the project because the accuracy of the matching affects the quality of our project.</ul></ul></ul></div>
+	--><div class="right"><ul><ul><ul>This web service accepts the url in the request and fetch the similar products from database using various algorithms that suit the type of data we are matching. This is the core part of the project.The accuracy of the matching is the metric for the success of the project.</ul></ul></ul></div>
 
 	<!-- comment the space between this two divs if they are needed-->
 	<!-- <div class="left"></div>
@@ -104,10 +110,10 @@
 
 
 	<div class="left"></div><!--
-	--><div class="right"><ul><ul><ul>Deploying the code in aws server and analysing the performace of the code, modifying the code according to performance. This is one of the key steps to optimise the resources we have. Also worked on scripts and crons to restart the services after reboot of machine, to backup the database</ul></ul></ul></div>
+	--><div class="right"><ul><ul><ul>Worked on code deployment in production server.Worked on performace analysis of the code.Worked on scripts and crons to restart the services after reboot of machine and to backup the database.</ul></ul></ul></div>
 
 	<div class="left"></div><!--
-	--><div class="right"><ul><b>Technologies used :</b> Python, Docker, MySQL</ul></div>
+	--><div class="right"><ul><b>Technologies used :</b> Python, Docker, MySQL(DB), Linux (OS)</ul></div>
 	<div class="left"></div><!--
 	--><div class="right"><ul><b>Python Modules used:</b> requests, pandas, numpy, stem, splash, torndb, tornado, lxml</ul></div>
 
@@ -119,10 +125,12 @@
 	<div class="left"></div><!--
 	--><div class="right"><b>Data Integrity tester</b></div>
 	<div class="left"></div><!--
-	--><div class="right"><ul>Need to test the integrity and correctness of the data by writing SQL stored procedures, test cases and pivot tables in excel. The results generated from developers should match with the reports generated by pivot tables.</ul></div>
+	--><div class="right"><ul>Need to test the integrity and correctness of the data by writing SQL stored procedures, test cases and using pivot tables in excel. The results generated from developers should match with the reports generated by pivot tables.</ul></div>
 	<div class="left"></div><!--
 	--><div class="right"><ul><b>Technologies used :</b> SQL, Pivot Table in Excel and VB script</ul></div>
+	<div class="empty"></div>
 </div>
+<div class="empty"></div>
 <div style="display: inline-block;width: 90%;text-align: center;background-color: transparent;overflow: auto;font-size: 4px;margin-top: 10px">
 	<div style="display: inline-block;width: 100%;background-color: transparent;font-size: 20px;font-family: arial;color: #7a7a7b;margin: 0px;text-align: left;">Major Projects</div>
 	<div style="display: inline-block;width: 100%;background-color: #d74846; height: 3px;margin-top: -5px"></div>
@@ -184,9 +192,10 @@
 <div style="display: inline-block;width: 90%;text-align: center;background-color: transparent;overflow: auto;font-size: 4px;margin-top: 10px">
 	<div style="display: inline-block;width: 100%;background-color: transparent;font-size: 20px;font-family: arial;color: #7a7a7b;margin: 0px;text-align: left;">Achievements & Position Of Responsibilities</div>
 	<div style="display: inline-block;width: 100%;background-color: #d74846; height: 3px;margin-top: -5px"></div>
-	<div style="display: inline-block;background-color: transparent;width: 100%;text-align: left;vertical-align: top;font-size: 14px"><li>Got 75% concession on my education for my X XI and XII classes based on my performance</li></div>
-	<div style="display: inline-block;background-color: transparent;width: 100%;text-align: left;vertical-align: top;font-size: 14px"><li>Got 1st prize in college online coding round and got cash prize as reward</li></div>
-	<div style="display: inline-block;background-color: transparent;width: 100%;text-align: left;vertical-align: top;font-size: 14px"><li>Joined as the mentor in iB Hubs global mentorship program to guide startups</li></div>
+	<div style="display: inline-block;background-color: transparent;width: 100%;text-align: left;vertical-align: top;font-size: 14px"><li>Got 75% concession on my education for my X XI and XII classes based on my performance.</li></div>
+	<div style="display: inline-block;background-color: transparent;width: 100%;text-align: left;vertical-align: top;font-size: 14px"><li>Got 1st prize in college online coding round and got cash prize as reward.</li></div>
+	<div style="display: inline-block;background-color: transparent;width: 100%;text-align: left;vertical-align: top;font-size: 14px"><li>My team got 12th position in ACM ICPC India Chennai Multi-Provincial National Programming Contest 2015.</li></div>
+	<div style="display: inline-block;background-color: transparent;width: 100%;text-align: left;vertical-align: top;font-size: 14px"><li>Joined as the mentor in iB Hubs global mentorship program to guide startups.</li></div>
 	<div style="display: inline-block;background-color: transparent;width: 100%;text-align: left;vertical-align: top;font-size: 14px"><li>Worked in AXIS, college fest 2015 as co-ordinator.</li></div>
 </div>
 
